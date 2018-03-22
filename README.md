@@ -1,6 +1,7 @@
 # Sh3llshock
 ## Install
 ```
+git clone https://github.com/T3jv1l/Sh3llshock.git
 chmod +x Sh3llshock.py
 ./Sh3llshock or python Sh3llshock.py
 ```
