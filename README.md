@@ -1,4 +1,4 @@
-# Sh3llshock is a tool to extract shellcode from the binary file
+# Sh3llshock
 ## Install
 ```
 chmod +x Sh3llshock.py
