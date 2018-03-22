@@ -1,4 +1,29 @@
 # Sh3llshock
+```
+# Sh3llshock is a binary  tool                                               #
+# Author: T3jv1l                                                             #
+# For any bugs////suggestions contact: t3jv1l@gmail.com                      #
+#                                                                            #
+# Copyright 2018 -T3jv1l                                                     #
+#                                                                            #
+#-----License-----------------------------------------------------------------
+#                                                                            #
+#                                                                            #
+#    This program is free software: you can redistribute it and/or modify    #
+#    it under the terms of the GNU General Public License as published by    #
+#    the Free Software Foundation, either version 3 of the License, or       #
+#    (at your option) any later version                                      #
+#                                                                            #
+#    This  program is distributed in the hope that it will be useful,        #
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of          #  
+#    Merchantability or Fitness for a Particular Purpose. See the            #  
+#    GNU General Public License For More Details:                            #
+#                                                                            #
+#    You should have recived a copy of the GNU General Public License        #
+#    along with this program. If not,see:                                    #
+#    https://www.gnu.org/licenses/licenses.en.html                           #
+##############################################################################
+```
 ## Install
 ```
 git clone https://github.com/T3jv1l/Sh3llshock.git
