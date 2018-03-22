@@ -1,19 +1,4 @@
 # Sh3llshock is a tool to extract shellcode from the binary file
- ____  _     _____ _ _     _                _     
-/ ___|| |_  |___ /| | |___| |__   ___   ___| | __  
-\___ \| '_ \  |_ \| | / __| '_ \ / _ \ / __| |/ / 
- ___) | | | |___) | | \__ \ | | | (_) | (__|   <  
-|____/|_| |_|____/|_|_|___/_| |_|\___/ \___|_|\_\  
-
-           <<<<<<Coded by T3jv1l>>>>>>>>       
-      <<<<<<Contact for bug t3jv1l@gmail.com>>>>>> 
-  
-            Usage:  [argument] [file] [argument]:
-      -f    --file     The ASM code filename
-      -s    --show     Show shellcode
-      -i    --intel    Syntax
-
-
 ## Install
 ```
 chmod +x Sh3llshock.py
