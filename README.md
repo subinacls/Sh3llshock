@@ -37,7 +37,7 @@ Sh3llshock.py
 
 ## Example Usage:
 ```
-./Sh3llshock.py -f '/home/T3jv1l/Desktop/Python_scoala/hello.o' -s
+./Sh3llshock.py -f '/home/T3jv1l/Desktop/ASM_Ex1/hello.o' -s
 [+] Shellcode =
 \xba\x0e\x00\x00\x00\xb9\x00\x00
 \x00\x00\xbb\x01\x00\x00\x00\xb8
