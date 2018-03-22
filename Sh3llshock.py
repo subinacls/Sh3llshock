@@ -7,20 +7,37 @@ import sys
 import getopt
 import string
 from subprocess import check_output
+	
+class color:  HEADER = '\033[95m'
+    IMPORTANT = '\33[35m'
+    NOTICE = '\033[33m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    RED = '\033[91m'
+    END = '\033[0m'
+    UNDERLINE = '\033[4m'
+    LOGGING = '\33[34m'
+
+
 
 
 def logo():
+	print color.OKGREEN + ""
 	print " ____  _     _____ _ _     _                _     "
 	print "/ ___|| |_  |___ /| | |___| |__   ___   ___| | __  "
 	print "\___ \| '_ \  |_ \| | / __| '_ \ / _ \ / __| |/ / "
 	print " ___) | | | |___) | | \__ \ | | | (_) | (__|   <  "
-	print "|____/|_| |_|____/|_|_|___/_| |_|\___/ \___|_|\_\  \n"
+	print "|____/|_| |_|____/|_|_|___/_| |_|\___/ \___|_|\_\  " + color.END
+	print color.OKBLUE + ""
 	print "           <<<<<<Coded by T3jv1l>>>>>>>>       "
-	print "      <<<<<<Contact for bug t3jv1l@gmail.com>>>>>> \n  "
+	print "      <<<<<<Contact for bug t3jv1l@gmail.com>>>>>> " + color.END
+	print color.HEADER + ""
 	print "            Usage:  [argument] [file] [argument]:" 
 	print "      -f    --file     The ASM code filename"
 	print "      -s    --show     Show shellcode"
-	print "      -i    --intel    Syntax"
+	print "      -i    --intel    Syntax" 
+	print " Example: ./Sh3llshock.py -f '/home/T3jv1l/Desktop/Python/hello.o' -s" + color.END
 
 
 
