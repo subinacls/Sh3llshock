@@ -5,7 +5,8 @@ chmod +x Sh3llshock.py
 ./Sh3llshock or python Sh3llshock.py
 ```
 
-##Example Usage:
+## Example Usage:
+```
 /Sh3llshock.py -f '/home/T3jv1l/Desktop/Python_scoala/hello.o' -s
 [+] Shellcode =
 \xba\x0e\x00\x00\x00\xb9\x00\x00
@@ -15,3 +16,4 @@ chmod +x Sh3llshock.py
 
 [+] We have a shellcode
 
+```
