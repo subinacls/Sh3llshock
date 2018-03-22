@@ -3,6 +3,7 @@
 ```
 chmod +x Sh3llshock.py
 ./Sh3llshock or python Sh3llshock.py
+```
 
 ##Example Usage:
 /Sh3llshock.py -f '/home/T3jv1l/Desktop/Python_scoala/hello.o' -s
@@ -14,4 +15,3 @@ chmod +x Sh3llshock.py
 
 [+] We have a shellcode
 
-```
