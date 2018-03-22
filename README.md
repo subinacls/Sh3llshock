@@ -30,7 +30,8 @@ git clone https://github.com/T3jv1l/Sh3llshock.git
 chmod +x Sh3llshock.py
 ./Sh3llshock or python Sh3llshock.py 
 
-to run anywhere you, use the following command:
+To run anywhere you want, use the following command:
+
 mv Sh3llshock.py /usr/bin 
 Sh3llshock.py
 ```
