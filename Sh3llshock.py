@@ -33,7 +33,8 @@ import getopt
 import string
 from subprocess import check_output
 
-class color:  
+
+class color:
     HEADER = '\033[95m'
     IMPORTANT = '\33[35m'
     NOTICE = '\033[33m'
@@ -44,8 +45,6 @@ class color:
     END = '\033[0m'
     UNDERLINE = '\033[4m'
     LOGGING = '\33[34m'
-
-
 
 
 def logo():
@@ -66,12 +65,9 @@ def logo():
 	print " Example: ./Sh3llshock.py -f '/home/T3jv1l/Desktop/Python/hello.o' -s" + color.END
 
 
-
-
 def main():
 	try:
 		opts, args = getopt.getopt(sys.argv[1:], "f:si", ["file=", "show","intel"])
-
 	except getopt.GetoptError as err:
 		print(str(err))
 		usage()
@@ -98,51 +94,43 @@ def main():
 					shellcode = re.sub(
 								"(.{32})", "\\1 \n",
 								shellcode, 0, re.DOTALL)
-					
-					print(shellcode[:-1])
+					print(shellcode[::])
 					print("\n[+] We have a shellcode....")
 				else:
 					shellcode = re.sub(
 								"(.{32})", "\\1\n",
 								shellcode, 0, re.DOTALL)
-					print(shellcode[:-1])
+					print(shellcode[::])
 		else:
 			assert False, "unhandled option"
 
+
 def parse(obj, syntax, format):
 	objdump = ['objdump', '-d', '-M', syntax, obj]
-
 	lines = check_output(objdump)
 	lines = lines.split(b'Disassembly of section')[1]
 	lines = lines.split(b'\n')[3:]
-
 	shellcode = ""
 	code = []
-
 	for l in lines:
 		l = l.strip()
-
 		tabs = l.split(b'\t')
 		if (len(tabs) < 2):
 			continue
 		bytes = tabs[1].strip()
-
 		instruction = "."
 		if (len(tabs) == 3):
 			instruction = tabs[2].strip().decode("utf-8")
-
 		bytes = bytes.split(b' ')
 		sh3llshock = ""
 		for byte in bytes:
 			sh3llshock += "\\x" + byte.decode("utf-8")
-
 		shellcode += sh3llshock
 		if format is  None:
 			show_shell =  (32, '"'+sh3llshock+'"', instruction)
 		else:
 			show_shell =  (32, '"'+sh3llshock+'"', instruction)
 		code.append(show_shell)
-
 	return shellcode, code
 
 
@@ -151,9 +139,3 @@ if __name__ == "__main__":
 		logo()
 	else:
 		 main()
-
-	
-
-
-	
-
